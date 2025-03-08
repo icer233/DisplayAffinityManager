@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12BC581E-2BE6-4539-B199-B0E8A5E7B6DD}|DisplayAffinityManager.vcxproj|D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12BC581E-2BE6-4539-B199-B0E8A5E7B6DD}|DisplayAffinityManager.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CB83F3E-9E8D-4F4C-B354-E000A22E0E19}|..\\AffinityBlack\\AffinityBlack.vcxproj|D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\AffinityBlack\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAANsAAAAAAAAAAAAwwL4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-08T11:02:44.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dllmain.cpp",
+              "DocumentMoniker": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\AffinityBlack\\dllmain.cpp",
+              "RelativeDocumentMoniker": "..\\AffinityBlack\\dllmain.cpp",
+              "ToolTip": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\AffinityBlack\\dllmain.cpp",
+              "RelativeToolTip": "..\\AffinityBlack\\dllmain.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-08T10:58:27.523Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

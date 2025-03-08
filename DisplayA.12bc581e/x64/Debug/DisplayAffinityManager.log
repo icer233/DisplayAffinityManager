@@ -1,0 +1,4 @@
+﻿  DisplayAffinityManager.cpp
+D:\01-戴栎泽\其它\vs\DisplayAffinityManager\DisplayAffinityManager.cpp(77,25): error C2065: “FOREGROUND_CYAN”: 未声明的标识符
+D:\01-戴栎泽\其它\vs\DisplayAffinityManager\DisplayAffinityManager.cpp(239,21): error C2065: “FOREGROUND_CYAN”: 未声明的标识符
+D:\01-戴栎泽\其它\vs\DisplayAffinityManager\DisplayAffinityManager.cpp(287,21): error C2065: “FOREGROUND_CYAN”: 未声明的标识符
