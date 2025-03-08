@@ -1,7 +1,6 @@
 ﻿  main.cpp
   正在生成代码
-  2 of 208 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB not found, fall back to full compilation.
+  All 208 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成代码的生成
   DisplayAffinityManager.vcxproj -> D:\01-戴栎泽\其它\vs\DisplayAffinityManager\x64\Release\DisplayAffinityManager.exe
