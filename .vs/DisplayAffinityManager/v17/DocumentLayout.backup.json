@@ -3,23 +3,8 @@
   "WorkspaceRootPath": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12BC581E-2BE6-4539-B199-B0E8A5E7B6DD}|DisplayAffinityManager.vcxproj|D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\icon1.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{12BC581E-2BE6-4539-B199-B0E8A5E7B6DD}|DisplayAffinityManager.vcxproj|solutionrelative:icon1.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12BC581E-2BE6-4539-B199-B0E8A5E7B6DD}|DisplayAffinityManager.vcxproj|D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\icon.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{12BC581E-2BE6-4539-B199-B0E8A5E7B6DD}|DisplayAffinityManager.vcxproj|solutionrelative:icon.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12BC581E-2BE6-4539-B199-B0E8A5E7B6DD}|DisplayAffinityManager.vcxproj|D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\DisplayAffinityManager.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       0 ! $(  \u0022     ",
-      "RelativeMoniker": "D:0:0:{12BC581E-2BE6-4539-B199-B0E8A5E7B6DD}|DisplayAffinityManager.vcxproj|solutionrelative:DisplayAffinityManager.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       0 ! $(  \u0022     "
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12BC581E-2BE6-4539-B199-B0E8A5E7B6DD}|DisplayAffinityManager.vcxproj|D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{12BC581E-2BE6-4539-B199-B0E8A5E7B6DD}|DisplayAffinityManager.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CB83F3E-9E8D-4F4C-B354-E000A22E0E19}|..\\AffinityBlack\\AffinityBlack.vcxproj|D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\AffinityBlack\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,63 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "icon1.ico - Icon [48x48, 32 \u4F4D, BMP]",
-              "DocumentMoniker": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\icon1.ico",
-              "RelativeDocumentMoniker": "icon1.ico",
-              "ToolTip": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\icon1.ico - Icon [48x48, 32 \u4F4D, BMP]",
-              "RelativeToolTip": "icon1.ico - Icon [48x48, 32 \u4F4D, BMP]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2025-03-08T11:40:22.513Z",
-              "EditorCaption": " - Icon [48x48, 32 \u4F4D, BMP]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "icon.png - PNG [1024x1024, 32 \u4F4D, PNG]",
-              "DocumentMoniker": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\icon.png",
-              "RelativeDocumentMoniker": "icon.png",
-              "ToolTip": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\icon.png - PNG [1024x1024, 32 \u4F4D, PNG]",
-              "RelativeToolTip": "icon.png - PNG [1024x1024, 32 \u4F4D, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-03-08T11:40:07.054Z",
-              "EditorCaption": " - PNG [1024x1024, 32 \u4F4D, PNG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DisplayAffinityManager.rc - VS_VERSION_INFO - Version",
-              "DocumentMoniker": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\DisplayAffinityManager.rc",
-              "RelativeDocumentMoniker": "DisplayAffinityManager.rc",
-              "ToolTip": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\DisplayAffinityManager.rc - VS_VERSION_INFO - Version*",
-              "RelativeToolTip": "DisplayAffinityManager.rc - VS_VERSION_INFO - Version*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-03-08T11:37:00.598Z",
-              "EditorCaption": " - VS_VERSION_INFO - Version"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\DisplayAffinityManager\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAADYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAALQAAAAAAAAAAAAAAMwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-08T11:02:44.122Z",
+              "WhenOpened": "2025-03-09T10:01:36.305Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "dllmain.cpp",
-              "DocumentMoniker": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\AffinityBlack\\dllmain.cpp",
-              "RelativeDocumentMoniker": "..\\AffinityBlack\\dllmain.cpp",
-              "ToolTip": "D:\\01-\u6234\u680E\u6CFD\\\u5176\u5B83\\vs\\AffinityBlack\\dllmain.cpp",
-              "RelativeToolTip": "..\\AffinityBlack\\dllmain.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-08T10:58:27.523Z"
             }
           ]
         }

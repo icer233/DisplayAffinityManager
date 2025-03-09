@@ -9,6 +9,15 @@
 #include <Shlwapi.h>
 #pragma comment(lib,"shlwapi.lib")
 
+#define RESET   "\033[0m"
+#define RED     "\033[31m"
+#define GREEN   "\033[32m"
+#define YELLOW  "\033[33m"
+#define BLUE    "\033[34m"
+#define MAGENTA "\033[35m"
+#define CYAN    "\033[36m"
+#define WHITE   "\033[37m"
+
 using namespace std;
 
 // Affinity types
@@ -184,20 +193,20 @@ bool InjectDLL(DWORD pid, const std::wstring& dllPath) {
 // Main menu
 void ShowMainMenu() {
     system("cls");
-    cout << "    ___ ____ _____ ____  ____  __________ " << endl;
+    cout << YELLOW << "    ____ _________ ____  ____  __________ " << endl;
     cout << "    |_ _/ ___| ____|  _ \\|___ \\|___ /___ / " << endl;
     cout << "     | | |   |  _| | |_) | __) | |_ \\ |_ \\" << endl;
     cout << "     | | |___| |___|  _ < / __/ ___) |__) |" << endl;
     cout << "    |___\\____|_____|_| \\_\\_____|____/____/" << endl << endl;
-    cout << "======== Window Display Affinity Manager ========" << endl;
-    cout << "1. List all processes with windows" << endl;
-    cout << "2. Set display affinity to WDA_NONE (normal display)" << endl;
+    cout << RESET << "======== Window Display Affinity Manager ========" << endl;
+    cout << GREEN << "1. List all processes with windows" << endl;
+    cout << CYAN << "2. Set display affinity to WDA_NONE (normal display)" << endl;
     cout << "3. Set display affinity to WDA_MONITOR (protected from capture)" << endl;
     cout << "4. Set display affinity to WDA_EXCLUDEFROMCAPTURE (exluded from capture)" << endl;
-    cout << "5. Get current display affinity status" << endl;
-    cout << "0. Exit" << endl;
-    cout << "=================================================" << endl;
-    cout << "Selection: ";
+    cout << GREEN << "5. Get current display affinity status" << endl;
+    cout << RED << "0. Exit" << endl;
+    cout << RESET << "============= ICER233 @ LCG-52POJIE =============" << endl;
+    cout << "Selection: " << endl;
 }
 
 int main() {
@@ -321,7 +330,7 @@ int main() {
                     Log("Getting display affinity status for %s (PID: %d)...",
                         selectedProc.name.c_str(), selectedProc.pid);
                     if (InjectDLL(selectedProc.pid, statusDllPath)) {
-                        Log("Status check completed. Check the application output or use DebugView to see results.");
+                        Log("Status check completed. Check the MessageBox to see results.");
                     }
                     else {
                         Log("Failed to check display affinity status.");

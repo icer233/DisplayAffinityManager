@@ -136,6 +136,7 @@
     <ResourceCompile Include="DisplayAffinityManager.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="icon.png" />
     <Image Include="icon1.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

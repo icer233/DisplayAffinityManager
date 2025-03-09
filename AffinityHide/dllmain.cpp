@@ -56,11 +56,22 @@ void ApplyMonitorAffinity() {
     DebugLog("====== Modified %d windows for %s ======", windowCount, procName.c_str());
 }
 
+DWORD WINAPI UnloadSelf(LPVOID param) {
+    Sleep(10);
+    FreeLibraryAndExitThread((HMODULE)param, 0);
+    return 0;
+}
+
+
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID reserved) {
     switch (reason) {
     case DLL_PROCESS_ATTACH:
         // Apply affinity when DLL is loaded
         ApplyMonitorAffinity();
+
+        // Detach DLL when finished the work
+        DWORD threadId;
+        CreateThread(NULL, 0, UnloadSelf, hModule, 0, &threadId);
         break;
 
     case DLL_PROCESS_DETACH:

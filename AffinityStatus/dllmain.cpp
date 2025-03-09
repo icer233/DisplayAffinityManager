@@ -36,6 +36,12 @@ const char* GetAffinityString(DWORD affinity) {
     }
 }
 
+void DebugLog(const char* format, const char* windowTitle, const char* affinityStatus) {
+    char buffer[512];
+    snprintf(buffer, sizeof(buffer), format, windowTitle, affinityStatus);
+    MessageBoxA(NULL, buffer, "Debug Info", MB_OK | MB_ICONINFORMATION);
+}
+
 // Check affinity of all windows in current process
 void CheckAffinity() {
     std::string procName = GetProcessName();
@@ -57,7 +63,7 @@ void CheckAffinity() {
             // Get display affinity
             DWORD affinity = 0;
             if (GetWindowDisplayAffinity(hwnd, &affinity)) {
-                DebugLog("Window: %s - Status: %s",
+                DebugLog("Window: %s\nStatus: %s",
                     (title[0] ? title : "<No Title>"),
                     GetAffinityString(affinity));
                 windowCount++;
@@ -73,11 +79,21 @@ void CheckAffinity() {
     DebugLog("====== Checked %d windows for %s ======", windowCount, procName.c_str());
 }
 
+DWORD WINAPI UnloadSelf(LPVOID param) {
+    Sleep(10);
+    FreeLibraryAndExitThread((HMODULE)param, 0);
+    return 0;
+}
+
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID reserved) {
     switch (reason) {
     case DLL_PROCESS_ATTACH:
         // Check affinity when DLL is loaded
         CheckAffinity();
+
+        // Detach DLL when finished the work
+        DWORD threadId;
+        CreateThread(NULL, 0, UnloadSelf, hModule, 0, &threadId);
         break;
 
     case DLL_PROCESS_DETACH:
