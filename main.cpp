@@ -193,23 +193,25 @@ bool InjectDLL(DWORD pid, const std::wstring& dllPath) {
 // Main menu
 void ShowMainMenu() {
     system("cls");
-    cout << YELLOW << "    ____ _________ ____  ____  __________ " << endl;
+    cout << GREEN << "    ____ _________ ____  ____  __________ " << endl;
     cout << "    |_ _/ ___| ____|  _ \\|___ \\|___ /___ / " << endl;
     cout << "     | | |   |  _| | |_) | __) | |_ \\ |_ \\" << endl;
     cout << "     | | |___| |___|  _ < / __/ ___) |__) |" << endl;
     cout << "    |___\\____|_____|_| \\_\\_____|____/____/" << endl << endl;
     cout << RESET << "======== Window Display Affinity Manager ========" << endl;
-    cout << GREEN << "1. List all processes with windows" << endl;
-    cout << CYAN << "2. Set display affinity to WDA_NONE (normal display)" << endl;
-    cout << "3. Set display affinity to WDA_MONITOR (protected from capture)" << endl;
-    cout << "4. Set display affinity to WDA_EXCLUDEFROMCAPTURE (exluded from capture)" << endl;
-    cout << GREEN << "5. Get current display affinity status" << endl;
+    cout << YELLOW << "1. List all processes with windows" << endl;
+    cout << CYAN << "2. Set to WDA_NONE (normal display)" << endl;
+    cout << "3. Set to WDA_MONITOR (protected from capture)" << endl;
+    cout << "4. Set to WDA_EXCLUDEFROMCAPTURE (exluded from capture)" << endl;
+    cout << YELLOW << "5. Get current display affinity status" << endl;
     cout << RED << "0. Exit" << endl;
-    cout << RESET << "============= ICER233 @ LCG-52POJIE =============" << endl;
-    cout << "Selection: " << endl;
+    cout << RESET << "============= ICER233 @ LCG-52POJIE =============" << endl << endl;
+    cout << "Selection: ";
 }
 
 int main() {
+    MessageBoxA(NULL, "This software is completely FREE\nhttps://github.com/icer233/DisplayAffinityManager", "DisplayAffinityManager", MB_OK);
+
     // Enable debug privileges for accessing all processes
     if (!SetDebugPrivilege()) {
         Log("Failed to set debug privilege. Some processes might not be accessible.");
