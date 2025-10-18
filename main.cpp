@@ -222,30 +222,55 @@ int main() {
     std::wstring unhideDllPath = GetFullFilePath(L"AffinityUnhide.dll");
     std::wstring statusDllPath = GetFullFilePath(L"AffinityStatus.dll");
     std::wstring transDllPath = GetFullFilePath(L"AffinityTrans.dll");
+    std::wstring hideDll32Path = GetFullFilePath(L"AffinityHide32.dll");
+    std::wstring unhideDll32Path = GetFullFilePath(L"AffinityUnhide32.dll");
+    std::wstring statusDll32Path = GetFullFilePath(L"AffinityStatus32.dll");
+    std::wstring transDll32Path = GetFullFilePath(L"AffinityTrans32.dll");
 
     if (GetFileAttributes(hideDllPath.c_str()) == INVALID_FILE_ATTRIBUTES) {
         Log("Error: AffinityHide.dll not found in the application directory.");
         system("pause");
-        return 1;
+        //return 1;
     }
 
     if (GetFileAttributes(unhideDllPath.c_str()) == INVALID_FILE_ATTRIBUTES) {
         Log("Error: AffinityUnhide.dll not found in the application directory.");
         system("pause");
-        return 1;
+        //return 1;
     }
     if (GetFileAttributes(transDllPath.c_str()) == INVALID_FILE_ATTRIBUTES) {
         Log("Error: AffinityTrans.dll not found in the application directory.");
         system("pause");
-        return 1;
+        //return 1;
     }
 
     if (GetFileAttributes(statusDllPath.c_str()) == INVALID_FILE_ATTRIBUTES) {
         Log("Error: AffinityStatus.dll not found in the application directory.");
         system("pause");
-        return 1;
+        //return 1;
+    }
+    if (GetFileAttributes(hideDll32Path.c_str()) == INVALID_FILE_ATTRIBUTES) {
+        Log("Error: AffinityHide32.dll not found in the application directory.");
+        system("pause");
+        //return 1;
     }
 
+    if (GetFileAttributes(unhideDll32Path.c_str()) == INVALID_FILE_ATTRIBUTES) {
+        Log("Error: AffinityUnhide32.dll not found in the application directory.");
+        system("pause");
+        //return 1;
+    }
+    if (GetFileAttributes(transDll32Path.c_str()) == INVALID_FILE_ATTRIBUTES) {
+        Log("Error: AffinityTrans32.dll not found in the application directory.");
+        system("pause");
+        //return 1;
+    }
+
+    if (GetFileAttributes(statusDll32Path.c_str()) == INVALID_FILE_ATTRIBUTES) {
+        Log("Error: AffinityStatus32.dll not found in the application directory.");
+        system("pause");
+        //return 1;
+    }
     int choice = -1;
     while (choice != 0) {
         ShowMainMenu();
@@ -298,7 +323,7 @@ int main() {
                     // Set WDA_NONE
                     Log("Setting display affinity to WDA_NONE for %s (PID: %d)...",
                         selectedProc.name.c_str(), selectedProc.pid);
-                    if (InjectDLL(selectedProc.pid, unhideDllPath)) {
+                    if (InjectDLL(selectedProc.pid, unhideDllPath) && InjectDLL(selectedProc.pid, unhideDll32Path)) {
                         Log("Successfully set display affinity to normal mode.");
                     }
                     else {
@@ -309,7 +334,7 @@ int main() {
                     // Set WDA_MONITOR
                     Log("Setting display affinity to WDA_MONITOR for %s (PID: %d)...",
                         selectedProc.name.c_str(), selectedProc.pid);
-                    if (InjectDLL(selectedProc.pid, hideDllPath)) {
+                    if (InjectDLL(selectedProc.pid, hideDllPath) && InjectDLL(selectedProc.pid, hideDll32Path)) {
                         Log("Successfully set display affinity to protected mode.");
                     }
                     else {
@@ -320,7 +345,7 @@ int main() {
                     // Set WDA_EXCLUDEFROMCAPTURE
                     Log("Setting display affinity to WDA_EXCLUDEFROMCAPTURE for %s (PID: %d)...",
                         selectedProc.name.c_str(), selectedProc.pid);
-                    if (InjectDLL(selectedProc.pid, transDllPath)) {
+                    if (InjectDLL(selectedProc.pid, transDllPath) && InjectDLL(selectedProc.pid, transDll32Path)) {
                         Log("Successfully set display affinity to excluded mode.");
                     }
                     else {
@@ -331,7 +356,7 @@ int main() {
                     // Get status
                     Log("Getting display affinity status for %s (PID: %d)...",
                         selectedProc.name.c_str(), selectedProc.pid);
-                    if (InjectDLL(selectedProc.pid, statusDllPath)) {
+                    if (InjectDLL(selectedProc.pid, statusDllPath) && InjectDLL(selectedProc.pid, statusDll32Path)) {
                         Log("Status check completed. Check the MessageBox to see results.");
                     }
                     else {

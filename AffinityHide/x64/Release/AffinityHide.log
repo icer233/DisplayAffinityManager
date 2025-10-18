@@ -4,4 +4,4 @@
   Previous IPDB not found, fall back to full compilation.
   All 73 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成代码的生成
-  AffinityHide.vcxproj -> D:\01-戴栎泽\其它\vs\DisplayAffinityManager\x64\Release\AffinityHide.dll
+  AffinityHide.vcxproj -> C:\Users\Guo\Source\Repos\DisplayAffinityManager\x64\Release\AffinityHide.dll
